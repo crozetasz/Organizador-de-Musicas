@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+:root{
+    --russian-violet: #10002bff;
+    --russian-violet-2: #240046ff;
+    --persian-indigo: #3c096cff;
+    --tekhelet: #5a189aff;
+    --french-violet: #7b2cbfff;
+    --amethyst: #9d4eddff;
+    --heliotrope: #c77dffff;
+    --mauve: #e0aaffff;
+}
   
   body {
     font-family: 'Poppins', sans-serif;
@@ -13,26 +26,48 @@
   
   header {
     display: flex;
+    flex-direction: row;
+    color: #fff;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    background-color: #FFF3EC;
+    background-color: var(--tekhelet);
   }
   
   nav a {
     margin-left: 15px;
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
+  }
+
+   nav a:hover{
+    color: var(--amethyst);
+    transition: 0.3s all;
+  }
+
+  #inscreva-se-btn{
+    border: 2px solid var(--amethyst);
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  #inscreva-se-btn:hover{
+    background-color: var(--amethyst);
   }
   
   .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #F7E8E6;
+    background-color: var(--persian-indigo);
   }
   
+  h2{
+    color: #fff;
+  }
+
   button {
-    background-color: #A6C8FF;
+    background-color: var(--amethyst);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -58,7 +93,9 @@
   footer {
     text-align: center;
     padding: 20px;
-    background-color: #FFF3EC;
+    color: #fff;
+    background-color: var(--tekhelet);
     font-size: 14px;
   }
+
   
